@@ -106,7 +106,7 @@ namespace MarkovTextGenerator
         /// </summary>
         /// <param name="startingWord"></param>
         /// <returns></returns>
-        public static String GenerateSentence(string startingWord)
+        public String GenerateSentence(string startingWord)
         {
             return "";
         }
