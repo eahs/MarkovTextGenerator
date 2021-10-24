@@ -62,6 +62,9 @@ project.lock.json
 project.fragment.lock.json
 artifacts/
 
+# Jetbrains Rider artifacts
+.idea/
+
 # ASP.NET Scaffolding
 ScaffoldingReadMe.txt
 
