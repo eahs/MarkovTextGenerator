@@ -8,6 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Update="Data\Billboard.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Data\Sample.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
