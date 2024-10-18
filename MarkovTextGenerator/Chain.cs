@@ -3,7 +3,7 @@
 public class Chain
 {
     public Dictionary<string, List<Word>> Words { get; set; } = new();
-    private Dictionary<string, int> _sums = new();
+    private readonly Dictionary<string, int> _sums = new();
     private readonly Random _rand = new(System.Environment.TickCount);
 
     /// <summary>
@@ -77,9 +77,9 @@ public class Chain
     /// <returns></returns>
     public string GetNextWord(string word)
     {
-        if (Words.ContainsKey(word))
+        if (Words.TryGetValue(word, out List<Word>? value))
         {
-            List<Word> choices = Words[word];
+            List<Word> choices = value;
             double test = _rand.NextDouble();
 
             Console.WriteLine("I picked the number " + test);
